@@ -1,0 +1,29 @@
+{
+  "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true
+  },
+  "extends": [ "standard", "standard-react" ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [ "react"],
+  "rules": {
+    "brace-style": [2, "stroustrup", { "allowSingleLine": true }],
+    "curly": ["warn", "all"],
+    "react/jsx-no-bind": [2],
+    "space-before-function-paren": [0],
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "no-console": ["warn", { allow: ["warn", "error"] }],
+    "quotes": ["error", "double"],
+    "jsx-quotes": ["error", "prefer-double"],
+    "semi": ["error", "always"]
+  }
+}
